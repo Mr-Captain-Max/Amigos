@@ -1,0 +1,323 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;han
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+    background: #f4f0ed;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: '../fonts/merriweatherblack_italic';
+    src: url('../fonts/merriweather-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '../fonts/merriweatherlight_italic';
+    src: url('../fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '../fonts/merriweatherblack_italic';
+    src: url('../fonts/merriweather-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+header{
+    height: 120px;
+    background: #f4f0ed;
+}
+header #top{
+    padding: 0px 16px;
+}
+header #top .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #top .content  nav.left{
+    display: block;
+    width: 240px;
+}
+header #top .content nav.left img{
+    display: block;
+    width: 100%;
+}
+header #top .content nav.right{
+    margin-right: 24px;
+}
+header #top .content nav.right ul{
+    display: flex;
+    align-items: center;
+}
+header #top .content nav.right ul li h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #223630;
+}
+header #top .content nav.right ul li:first-child{
+    margin-right: 48px;
+}
+#menu{
+    background: #223630;
+    height: 160px;
+}
+#menu .wrapper .content{
+   text-align: center;
+   padding: 24px 0;
+}
+#menu .wrapper .content h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin: 12px 0;
+    display: block;
+}
+#menu .wrapper .content div.button a{
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    display: block;
+    margin-top: 12px;
+    max-width: 10%;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+}
+#menu .wrapper .content div.button a.button:hover{
+    text-decoration: underline;
+    background: rgb(10, 34, 10);
+    background-image: url("../images/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    max-width: 14%;
+    transition-property: width10000ms;
+}
+#main{
+    background: #f4f0ed;
+}
+#main .wrapper .content{
+   margin: 0 auto;
+   display: block;
+   max-width: 80%;
+   padding: 36px 0;
+}
+#main .wrapper .content h2{
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    text-align: center;
+}
+
+#bake{
+    padding: 60px 0;
+}
+#bake .wrapper .content{
+    display: block;
+    max-width: 60%;
+    margin: 0 auto 48px;
+}
+#bake .wrapper .content hr.line{
+    border: 2px solid #223630 ;
+}
+#bake .wrapper .content ul{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+#bake .wrapper .content ul li:nth-child(2){
+    margin: 0px 48px;
+}
+#bake .wrapper .content ul li h3{
+    text-align: center;
+    font-weight: 700;
+    color: #606c68;
+}
+
+#bake .wrapper .dot{
+    display: block;
+    margin: 0 auto;
+    max-width: 50px;
+
+}
+#bake .wrapper .dot img{
+    display: block;
+    width: 100%;
+}
+#bake .wrapper .bottom{
+    padding: 24px 0;
+    display: block;
+}
+#bake .wrapper .bottom .content{
+    display: block;
+    max-width: 95%;
+    text-align: center;
+}
+#bake .wrapper .bottom .content h3{
+    font-weight: 500;
+}
+#specials{
+
+}
+#specials .wrapper h2{
+    text-align: center;
+    font-weight: 600;
+    color: #Cc1325;
+}
+#specials .wrapper hr.line{
+    border: 2px solid #223630 ;
+}
+#specials .wrapper .content {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 24px ;
+}
+#specials .wrapper .content ul{
+    display: flex;
+    justify-content: center;
+    padding: 36px 0;
+}
+#specials .wrapper .content ul li{
+    margin-right: 24px;
+}
+#specials .wrapper .content ul li a{
+    font-weight: 600;
+}
+<section class="content">
+<hr class="line" />
+<ul>
+    <li><a href="">DRINKS LIST</a></li>
+    <li><a href="">.</a></li>
+    <li><a href="">WINES</a></li>
+    <li><a href="">.</a></li>
+    <li><a href="">COCKTAILS</a></li>
+    <li><a href="">.</a></li>
+    <li><a href="">ALCOHOL FREE</a></li>
+</ul>
+<hr class="line" />
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
